@@ -998,7 +998,7 @@ const ModelBrowser: React.FC<ModelBrowserProps> = ({ serverUrl: propServerUrl })
               Cancel
             </Button>
             <Button
-              onClick={performUpload}
+              onClick={() => performUpload()}
               disabled={!uploadFile || !uploadFolder || isUploading}
               className="bg-indigo-600 hover:bg-indigo-700"
             >
